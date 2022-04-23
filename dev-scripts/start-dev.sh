@@ -4,6 +4,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 CDIR=$( pwd )
 cd $DIR
 
+DIRNAME=$(dirname $DIR)
+BASENAME=$(basename $DIRNAME)
 
 BUILD="0"
 DOWN="0"
@@ -48,7 +50,7 @@ fi
 rm -rf ../docker-data/pcache-cron.log
 touch ../docker-data/pcache-cron.log
 
-docker-compose -f docker-compose.local.yml run --service-ports  mapas
+docker-compose -f docker-compose.local.yml run --name=$BASENAME --service-ports  mapas
 
 docker-compose -f docker-compose.local.yml down
 cd $CDIR
