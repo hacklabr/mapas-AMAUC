@@ -1,0 +1,103 @@
+//
+// Overrides
+// --------------------------------------------------
+//## Style rules that overrides the default theme's ones.
+//## To make it easy to maintain and to avoid cascading problems,
+//## just before the new rules, document the name of the Sass partial
+//## where the original styles leave, group them per folder and keep
+//## them in the same order as the original styles are imported to the main.scss.
+
+//
+// application/
+// --------------------------------------------------
+
+
+// _header.scss
+// #secondary-menu {
+//      margin-top: 14px;
+// }
+
+//_home.scss
+// #home-watermark {
+// 	background-position: right bottom;
+// }
+// #nav-developers {
+//     background: #96161A;
+// }
+// #home-developers {
+//     background: #96161A;
+// }
+
+#main-header {
+
+  #brand-logo img {
+    height: 30px;
+
+    @media screen and (min-width: 768px) {
+      height: 48px;
+    }
+  }
+
+  #organization-logo {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  #main-nav a {
+    color: #444;
+  }
+
+  ul.submenu.hidden {
+    background-color: $white;
+  }
+
+  .user .submenu.hidden::before {
+    border-bottom: 8px solid $white;
+  }
+}
+
+#home {
+  &-agents {
+    @include backgroundTransparency('/assets/img/home--agents.jpg', $brand-agent);
+  }
+
+  &-developers {
+    @include backgroundTransparency('/assets/img/home--developers.jpg', $brand-developer);
+  }
+
+  &-events {
+    @include backgroundTransparency('/assets/img/home--events.jpg', $brand-event);
+  }
+
+  &-intro {
+    @include backgroundTransparency('/assets/img/home--intro.jpg', $brand-primary);
+    color: $white;
+
+    h1 {
+      color: $gray;
+    }
+  }
+
+  &-opportunities {
+    @include backgroundTransparency('/assets/img/home--opportunities.jpg', $brand-opportunity);
+  }
+
+  &-projects {
+    @include backgroundTransparency('/assets/img/home--projects.jpg', $brand-project);
+  }
+
+  &-spaces {
+    @include backgroundTransparency('/assets/img/home--spaces.jpg', $brand-space);
+  }
+
+  &-watermark {
+    background: transparent;
+  }
+
+  &-nav {
+    #nav-intro {
+      background-color: darkgray;
+    }
+  }
+}
