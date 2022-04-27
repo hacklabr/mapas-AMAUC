@@ -39,5 +39,4 @@ return [
 //        'subprefeitura' => 'Subprefeitura',
 //        'distrito'      => 'Distrito'
 //    ],
-    'app.lcode' => 'es_ES'
 ];
