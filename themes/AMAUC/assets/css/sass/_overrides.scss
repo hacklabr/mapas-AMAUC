@@ -59,19 +59,19 @@
 
 #home {
   &-agents {
-    @include backgroundTransparency('/assets/img/home--agents.jpg', $brand-agent);
+    @include backgroundTransparency($brand-agent);
   }
 
   &-developers {
-    @include backgroundTransparency('/assets/img/home--developers.jpg', $brand-developer);
+    @include backgroundTransparency($brand-developer);
   }
 
   &-events {
-    @include backgroundTransparency('/assets/img/home--events.jpg', $brand-event);
+    @include backgroundTransparency($brand-event);
   }
 
   &-intro {
-    @include backgroundTransparency('/assets/img/home--intro.jpg', $brand-primary);
+    @include backgroundTransparency($brand-primary);
     color: $white;
 
     h1 {
@@ -80,15 +80,15 @@
   }
 
   &-opportunities {
-    @include backgroundTransparency('/assets/img/home--opportunities.jpg', $brand-opportunity);
+    @include backgroundTransparency($brand-opportunity);
   }
 
   &-projects {
-    @include backgroundTransparency('/assets/img/home--projects.jpg', $brand-project);
+    @include backgroundTransparency($brand-project);
   }
 
   &-spaces {
-    @include backgroundTransparency('/assets/img/home--spaces.jpg', $brand-space);
+    @include backgroundTransparency($brand-space);
   }
 
   &-watermark {

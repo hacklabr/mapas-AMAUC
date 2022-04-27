@@ -55,6 +55,21 @@ class Theme extends BaseV1\Theme{
                 $headers['Content-Disposition'] = str_replace('attachment; ', '', $headers['Content-Disposition']);
             }
         });
+
+        
+        $app->hook('mapasculturais.styles', function() use ($app) {
+            $view = $app->view;
+            $images = [
+                'home-agents' => $view->asset('img/home--agents.jpg', false),
+                'home-developers' => $view->asset('img/home--developers.jpg', false),
+                'home-events' => $view->asset('img/home--events.jpg', false),
+                'home-intro' => $view->asset('img/home--intro.jpg', false),
+                'home-opportunities' => $view->asset('img/home--opportunities.jpg', false),
+                'home-projects' => $view->asset('img/home--projects.jpg', false),
+                'home-spaces' => $view->asset('img/home--spaces.jpg', false),
+            ];
+            $app->view->part('amauc-css', ['images' => $images]);
+        });
     }
 
     protected function _publishAssets() {
