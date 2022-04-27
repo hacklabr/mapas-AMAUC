@@ -5,9 +5,9 @@ return [
     'app.siteName' => env('SITE_NAME', 'Mapas Culturais Base Project'),
     'app.siteDescription' => i::__("O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades"),
 
-    'themes.active' => env('ACTIVE_THEME', 'MapasCulturais\Themes\BaseV1'),
+    'themes.active' => env('ACTIVE_THEME', 'AMAUC'),
 
-    'app.lcode' => env('APP_LCODE', 'pt_BR,es_ES'),
+    'app.lcode' => env('APP_LCODE', 'pt_BR'),
 
     'namespaces' => array(
         'MapasCulturais\Themes' => THEMES_PATH,
