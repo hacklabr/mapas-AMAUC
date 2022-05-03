@@ -2,8 +2,8 @@
 use MapasCulturais\i;
 
 return [
-    'app.siteName' => env('SITE_NAME', 'Mapas Culturais Base Project'),
-    'app.siteDescription' => i::__("O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades"),
+    'app.siteName' => env('SITE_NAME', 'Mapas Cultural da AMAUC'),
+    'app.siteDescription' => i::__("O Mapa Cultural da AMAUC é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades"),
 
     'themes.active' => env('ACTIVE_THEME', 'AMAUC'),
 
