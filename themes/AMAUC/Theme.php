@@ -84,16 +84,6 @@ class Theme extends BaseV1\Theme{
         $this->jsObject['assets']['logo-instituicao'] = $this->asset('img/logo-instituicao.png', false);
     }
 
-    function register() {
-        parent::register();
-        $app = App::i();
-
-        //Metadata de agente
-        $app->unregisterEntityMetadata('MapasCulturais\\Entities\\Agent', 'raca');
-        $app->unregisterEntityMetadata('MapasCulturais\\Entities\\Agent', 'orientacaoSexual');
-
-    }
-
 
     // protected function _getFilters(){
     //     $filters = parent::_getFilters();
