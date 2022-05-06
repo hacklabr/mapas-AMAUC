@@ -10,6 +10,8 @@ return [
     'auth.provider' => '\MultipleLocalAuth\Provider',
     'auth.config' => array(
         'statusCreateAgent' => env('STATUS_CREATE_AGENT', MapasCulturais\Entities\Agent::STATUS_DRAFT),
+        'google-recaptcha-secret' => env('GOOGLE_RECAPTCHA_SECRET', '6LcsL8sfAAAAAFP0A1BdAq5hM5KeIbL3fUQerrsU'),
+        'google-recaptcha-sitekey' => env('GOOGLE_RECAPTCHA_SITEKEY', '6LcsL8sfAAAAAJ7gnWd54xR9wE_Xi0ntlYmNVBW6'),
         'salt' => env('AUTH_SALT', null),
         'timeout' => '24 hours',
         'strategies' => [
