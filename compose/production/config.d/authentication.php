@@ -9,6 +9,7 @@ $_APP_BASE_URL = $prot_part . $host_part;
 return [
     'auth.provider' => '\MultipleLocalAuth\Provider',
     'auth.config' => array(
+        'statusCreateAgent' => env('STATUS_CREATE_AGENT', MapasCulturais\Entities\Agent::STATUS_DRAFT),
         'salt' => env('AUTH_SALT', null),
         'timeout' => '24 hours',
         'strategies' => [
