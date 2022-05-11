@@ -25,7 +25,12 @@ class Theme extends BaseV1\Theme{
            'home: title' => i::__("Bem-vind@!"),
            'home: abbreviation' => "plataforma Mapas da AMAUC",
            'home: colabore' => i::__('Participe'),
-        //    'home: welcome' => i::__("O Mapas da AMAUC"),
+           'home: welcome' => i::__("O Mapa Cultural da AMAUC, Associação dos Municípios do Alto Uruguai Catarinense, é uma plataforma livre, colaborativa e interativa de mapeamento do cenário cultural catarinense, além de ser um instrumento de governança digital no aprimoramento da gestão pública, dos mecanismos de participação e da democratização do acesso às políticas culturais promovidas pelas Secretarias, Superintendências e Diretorias de Cultura dos 14 municípios que compõe a AMAUC. <br><br>
+           É uma ferramenta de comunicação - através dos eventos presentes no calendário cultural, os projetos desenvolvidos e os espaços promovidos pelos agentes e instituições culturais. É uma plataforma de acesso e execução dos editais realizados pelos gestores culturais da região da AMAUC, bem como de outras oportunidades de demais agentes e espaços culturais.<br><br>
+           Você também pode colaborar na gestão da cultura da região da AMAUC. Para  participar deste  processo, basta criar seu perfil de agente cultural.
+           Este  perfil  é  criado a  partir de  um cadastro. Assim, fica mais fácil participar dos editais e programas das Secretarias, Superintendências e Diretorias de Cultura e também divulgar seus eventos, espaços ou projetos.
+           Participe!!<br><br>
+           "),
 //            'home: events' => "Você pode pesquisar eventos culturais nos campos de busca combinada. Como usuário cadastrado, você pode incluir seus eventos na plataforma e divulgá-los gratuitamente.",
 //            'home: agents' => "Você pode colaborar na gestão da cultura com suas próprias informações, preenchendo seu perfil de agente cultural. Neste espaço, estão registrados artistas, gestores e produtores; uma rede de atores envolvidos na cena cultural da região. Você pode cadastrar um ou mais agentes (grupos, coletivos, bandas instituições, empresas, etc.), além de associar ao seu perfil eventos e espaços culturais com divulgação gratuita.",
 //            'home: spaces' => "Procure por espaços culturais incluídos na plataforma, acessando os campos de busca combinada que ajudam na precisão de sua pesquisa. Cadastre também os espaços onde desenvolve suas atividades artísticas e culturais.",
