@@ -24,10 +24,10 @@
             <div class="column">
                 <p class="logo-instituicao"><a href="https://www.amauc.org.br/"><img src="<?php $this->asset('img/logo-site.png'); ?>" alt="Município de AMAUC - Associação dos Municípios do Alto Uruguai Catarinense"></a></p>
                 <p class="social-icons">
-                    <a href="#" aria-label="Facebook">&#xe093;</a>
-                    <a href="# aria-label="Twitter">&#xe094;</a>
-                    <a href="#" aria-label="Vimeo">&#xe09c;</a>
-                    <a href="#" aria-label="YouTube">&#xe0a3;</a>
+                    <a href="https://br-fr.facebook.com/amaucoficial" target="_blank" aria-label="Facebook">&#xe093;</a>
+                    <!-- <a href="# aria-label="Twitter">&#xe094;</a> -->
+                    <!-- <a href="#" aria-label="Vimeo">&#xe09c;</a> -->
+                    <a href="https://www.youtube.com/c/AMAUCASSOCIAÇÃO/" target="_blank" aria-label="YouTube">&#xe0a3;</a>
                 </p>
             </div>
             <div class="column">
