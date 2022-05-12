@@ -85,6 +85,7 @@ class Theme extends BaseV1\Theme{
         $this->asset('img/home--opportunities.jpg', false);
         $this->asset('img/home--projects.jpg', false);
         $this->asset('img/home--spaces.jpg', false);
+        $this->asset('img/logo-site.png', false);
 
         $this->jsObject['assets']['logo-instituicao'] = $this->asset('img/logo-instituicao.png', false);
     }
