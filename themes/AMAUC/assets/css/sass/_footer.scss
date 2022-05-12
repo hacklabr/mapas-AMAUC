@@ -29,12 +29,13 @@ footer {
 
     img {
         flex: 0;
-        height: 200px;
+        height: 150px;
         padding: 5px;
     }
 }
 
 #main-footer {
+    z-index: 1199;
     background-color: white;
     color: #111;
     // display: table;
