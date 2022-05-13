@@ -64,15 +64,32 @@ class Theme extends BaseV1\Theme{
         
         $app->hook('mapasculturais.styles', function() use ($app) {
             $view = $app->view;
+
+            $imagesList = [];
+            $path = __DIR__."/assets/img/randHome/";
+            $files = dir($path);
+
+            while($_file = $files->read()){
+                if ($_file != '.' && $_file != '..') {
+                    $imagesList[] = $view->asset("img/randHome/{$_file}", false);
+                }
+            }
+
+            $files->close();
+
+            shuffle($imagesList);
+
             $images = [
-                'home-agents' => $view->asset('img/home--agents.jpg', false),
-                'home-developers' => $view->asset('img/home--developers.jpg', false),
-                'home-events' => $view->asset('img/home--events.jpg', false),
-                'home-intro' => $view->asset('img/home--intro.jpg', false),
-                'home-opportunities' => $view->asset('img/home--opportunities.jpg', false),
-                'home-projects' => $view->asset('img/home--projects.jpg', false),
-                'home-spaces' => $view->asset('img/home--spaces.jpg', false),
+                'home-agents' => $view->asset($imagesList[0], false),
+                'home-developers' => $view->asset($imagesList[1], false),
+                'home-events' => $view->asset($imagesList[2], false),
+                'home-opportunities' => $view->asset($imagesList[4], false),
+                'home-projects' => $view->asset($imagesList[5], false),
+                'home-spaces' => $view->asset($imagesList[6], false),
             ];
+
+            $images['home-intro'] = $view->asset('img/home--intro.jpg', false);
+
             $app->view->part('amauc-css', ['images' => $images]);
         });
     }
