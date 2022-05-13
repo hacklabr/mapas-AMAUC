@@ -80,12 +80,12 @@ class Theme extends BaseV1\Theme{
             shuffle($imagesList);
 
             $images = [
-                'home-agents' => $view->asset($imagesList[0], false),
-                'home-developers' => $view->asset($imagesList[1], false),
-                'home-events' => $view->asset($imagesList[2], false),
-                'home-opportunities' => $view->asset($imagesList[4], false),
-                'home-projects' => $view->asset($imagesList[5], false),
-                'home-spaces' => $view->asset($imagesList[6], false),
+                'home-agents' => $imagesList[0],
+                'home-developers' => $imagesList[1],
+                'home-events' => $imagesList[2],
+                'home-opportunities' => $imagesList[4],
+                'home-projects' => $imagesList[5],
+                'home-spaces' => $imagesList[6],
             ];
 
             $images['home-intro'] = $view->asset('img/home--intro.jpg', false);
