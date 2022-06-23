@@ -1,4 +1,4 @@
-FROM hacklab/mapasculturais:develop
+FROM hacklab/mapasculturais:latest
 
 COPY compose/common/config.php /var/www/html/protected/application/conf/config.php
 COPY compose/common/config.d /var/www/html/protected/application/conf/conf-common.d
