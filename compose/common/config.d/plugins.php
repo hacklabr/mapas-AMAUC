@@ -16,5 +16,13 @@ return [
                 },
             ]
         ],
+        "LocationPatch" => [
+            "namespace" => "LocationPatch",
+            "config" => [
+                "enable" => env("LOCATION_PATCH_ENABLE", true),
+                "cutoff" => env("LOCATION_PATCH_CUTOFF", "19800101000001"),
+            ],
+        ],
+
     ]
 ];
