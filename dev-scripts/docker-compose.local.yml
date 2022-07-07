@@ -11,6 +11,7 @@ services:
       - ../docker-data/public-files:/var/www/html/files
       - ../docker-data/private-files:/var/www/private-files
 
+      - ../compose/common/lgpd-terms:/var/www/html/protected/application/conf/lgpd-terms
       - ../compose/common/config.d:/var/www/html/protected/application/conf/conf-common.d
       - ../compose/local/config.d:/var/www/html/protected/application/conf/config.d
 
