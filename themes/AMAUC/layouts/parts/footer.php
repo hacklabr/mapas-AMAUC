@@ -45,5 +45,24 @@
         <img id="human-crop-image"/>
     </div>
 <?php endif; ?>
+<?php  if($app->config['zammad_enable']) {
+                ?>
+            <script src="<?= $app->config['zammad_src_chat']; ?>"></script>
+            <script>
+                $(function() {
+                new ZammadChat({
+                    background: '<?= $app->config['zammad_background_color']; ?>',
+                    fontSize: '14px',
+                    chatId: 1,
+                    title: '<strong>Dúvidas?</strong> Fale conosco'
+
+                });
+                });
+        </script>
+         <style>.zammad-chat{
+            z-index: 9999!important;
+        }</style>
+    
+    <?php }?>
 </body>
 </html>
