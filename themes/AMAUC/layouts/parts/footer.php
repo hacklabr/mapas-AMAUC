@@ -34,7 +34,16 @@
                 <p class="logo-hacklab">Desenvolvido pelo <a href="https://hacklab.com.br"><img src="<?php $this->asset('img/logo-hacklab.svg'); ?>" alt="Município de hacklab/"></a></p>
             </div>
         </div>
+
+        <?php
+            if($app->config['zammad_btn_support_enabled']){
+                $linkSipport = $app->config['zammad_link_support'];
+                $textBtnSupport = $app->config['zammad_text_btn_support'];
+                $this->part('support', ["linkSipport" => $linkSipport, "textBtnSupport" => $textBtnSupport]); 
+            }
+        ?>
     </div>
+
 </footer>
 <?php $this->part('templates'); ?>
 <?php $this->bodyEnd(); ?>
@@ -45,7 +54,12 @@
         <img id="human-crop-image"/>
     </div>
 <?php endif; ?>
-<?php  if($app->config['zammad_enable']) {
+
+<?php  
+
+
+
+if($app->config['zammad_enable']) {
                 ?>
             <script src="<?= $app->config['zammad_src_chat']; ?>"></script>
             <script>
