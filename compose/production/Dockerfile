@@ -1,4 +1,4 @@
-FROM hacklab/mapasculturais:v5.3.18
+FROM hacklab/mapasculturais:v5.6.19
 
 COPY compose/common/lgpd-terms /var/www/html/protected/application/conf/lgpd-terms
 
