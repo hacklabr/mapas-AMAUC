@@ -3,9 +3,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 CDIR=$( pwd )
 cd $DIR
-DIRNAME=$(dirname $DIR)
-BASENAME=$(basename $DIRNAME)
 
-docker exec -it $BASENAME bash
+docker-compose exec mapas bash
 
 cd $CDIR

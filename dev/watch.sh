@@ -4,6 +4,6 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 CDIR=$( pwd )
 cd $DIR
 
-docker-compose exec db psql -U mapas psql -d mapas
+docker-compose exec -w /var/www/src mapas sh -c "pnpm install --recursive && pnpm run watch"
 
 cd $CDIR
