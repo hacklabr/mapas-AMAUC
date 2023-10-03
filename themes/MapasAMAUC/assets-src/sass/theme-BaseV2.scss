@@ -14,15 +14,15 @@ $lightness-300: 25%;
 $lightness-700: 25%;
 
 // Brand colors
-$primary-500: #0077B2;
-$secondary-500: #CE3683;
+$primary-500: #007B2B;
+$secondary-500: #f38b43;
 
 // Entities colors
-$opportunities-500: #CE3683;
-$events-500: #0077B2;
-$agents-500: #9756D8;
-$projects-500: #EF7B45;
-$spaces-500: #498200;
+$opportunities-500: #494CF8;
+$events-500: #CC0014;
+$agents-500: #396a95;
+$projects-500: #209DF5;
+$spaces-500: #FEB100;
 
 $seals-500: #1E1E1E;
 
@@ -33,7 +33,7 @@ $warning-500: #FF9F1C;
 $helper-500: #0074C1;
 
 // home
-$home-opportunities: #FFA4A3;
+$home-opportunities: #007B2B;
 $home-feature: #75C8FF;
 $home-register: #002842;
 
@@ -89,4 +89,9 @@ $home-register: #002842;
 
 .lgpd-creditos {
     font-weight: bold;
+}
+
+
+.mc-header-logo {
+    width: 146.14px;
 }

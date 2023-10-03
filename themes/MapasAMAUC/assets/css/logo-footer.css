@@ -1,6 +1,9 @@
 .logo-footer {
     margin: 16px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    text-align: center;
+}
+
+.logo-footer img {
+    margin: 10px;
+    max-width: 100px;
 }
