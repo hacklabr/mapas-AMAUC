@@ -3,6 +3,7 @@
 return [
     'plugins' => [
         'MultipleLocalAuth' => [ 'namespace' => 'MultipleLocalAuth' ],
+        'Zammad' => ['namespace' => 'Zammad'],
         'MapasBlame' => [
             'namespace' => 'MapasBlame',
             'config' => [
@@ -10,6 +11,6 @@ return [
                     return $data;
                 },
             ]
-        ]
+            ],
     ]
 ];
