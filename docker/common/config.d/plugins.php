@@ -2,6 +2,7 @@
 
 return [
     'plugins' => [
+        'AdminLoginAsUser' => ['namespace' => 'AdminLoginAsUser'],
         'MultipleLocalAuth' => [ 'namespace' => 'MultipleLocalAuth' ],
         'Zammad' => ['namespace' => 'Zammad'],
         'MapasBlame' => [
